@@ -65,4 +65,14 @@ contract Election{
         emite VoteCasted(msg.sender, _candidateId); //Emitting voting evento to log the action on the blockchain
     }
 
+    //Now we want to retrieve the voting results
+    //Returns an array with votes for candidate 13, candidate 22, and blank(abstained) votes
+    function getResults() public view returns (uint[3] memory){
+        uint[3] memory results;
+        results[0] = candidates[13].voteCount; //Votes for candidate 13
+        result[1] = candidates[22].voteCount; //Votes for candidate 22
+        results[2] = blankVotes; //Number of abstained votes
+        return results; //Results the results as an array
+    }
+
 }
