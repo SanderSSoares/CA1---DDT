@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DigitalVotingSystem.sol": "Election"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DigitalVotingSystem.sol": {
+			"keccak256": "0x8c0d748986fdfea63b00a0732bc9d321c1e7c071f3efcdb56262e7a75cd516c8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4a0c62414837ab42ef645f6d5e5cf1a1520de64edfb53bda2d05f7d223c1de0d",
+				"dweb:/ipfs/QmcGeFuRBoKJmWNrpvpDgX1X7xw4Mq9fPJT1kpKiWs25V9"
+			]
+		}
+	},
+	"version": 1
+}
