@@ -30,5 +30,11 @@ contract Election{
     //Event to log voting actions
     event VoteCasted(address voter, uint candidateId);
 
-    
+    //Constructor to initialize the contract
+    constructor(){
+        //Adding twovalid  candidates with unique IDs and names
+        addCandidate(13, "Candidate A");
+        addCandidate(22, "Candidate B");
+    }
+
 }
