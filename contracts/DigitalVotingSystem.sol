@@ -59,6 +59,10 @@ contract Election{
             //Increment vote count for the selected candidate
             candidates[_candidateId].voteCount++;
         }
+        
+        totalVotes++; //To increment thet total vote count
+        hasVoted[msg.sender] = true; //Mark the citizen as having voted
+        emite VoteCasted(msg.sender, _candidateId); //Emitting voting evento to log the action on the blockchain
     }
 
 }
