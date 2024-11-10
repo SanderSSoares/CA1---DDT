@@ -115,4 +115,10 @@ function uintToString(uint v) internal pure returns (string memory) {
         blankVotes=0;//REseting the abstained and total votes
         totalVotes=0;
     }
+
+    function batchVote(uint[] memory candidateIds) public{
+        for (uint i=0; i<candidateIds.length;i++){
+            vote(candidateIds[i]);
+        }
+    }
 }

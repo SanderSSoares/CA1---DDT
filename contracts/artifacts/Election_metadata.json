@@ -30,6 +30,19 @@
 				"type": "event"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "candidateIds",
+						"type": "uint256[]"
+					}
+				],
+				"name": "batchVote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "blankVotes",
 				"outputs": [
@@ -165,11 +178,11 @@
 	},
 	"sources": {
 		"contracts/DigitalVotingSystem.sol": {
-			"keccak256": "0x9aa44e55001a356714acda6c71ce034097a2383fec2a0a5729c0a125c90b2664",
+			"keccak256": "0x5deac059b4f5f6df4e318ff6a80922d16c92facb67b17868855e859897bca4f9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://88d1238d2a7dad962f172259b5b9e5dcaa536ea6b36c51e692793a0a4737cd2c",
-				"dweb:/ipfs/QmRLycykam7mp6GRfykAqP1dJLPSMifsUUmhat9g5icTe5"
+				"bzz-raw://0f6caeeba515ab21c9c5b5be111aae14d58dc761c9a5cd1e792e201c867dd90f",
+				"dweb:/ipfs/QmWqFh4EE47juysNsT6xhgr58v5cayMN68aEs2DoK7KZKW"
 			]
 		}
 	},
