@@ -75,4 +75,15 @@ contract Election{
         return results; //Results the results as an array
     }
 
+    //Now to reset teh vote counts
+    //This is improtant for testing and to make sure the deviec will be fully reseted for next election
+
+    function resetVotes() public{
+        candidates[13].voteCount=0; //Reseting votes for both candidates
+        candidates[22].voteCount=0;
+
+        blankvotes=0;//REseting the abstained and total votes
+        totalVotes=0;
+    }
+
 }
