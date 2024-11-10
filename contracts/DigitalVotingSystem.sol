@@ -51,6 +51,14 @@ contract Election{
         require(
             _candidateId ==13 || _candidateId ==22 || _candidateId ==0, "Invalid candidate ID. Press 0 if you with to Abstain."
         );
+
+        //Increament vote count for abstained votes
+        if (_candidateId ==0){
+            blankVotes++;
+        }else{
+            //Increment vote count for the selected candidate
+            candidates[_candidateId].voteCount++;
+        }
     }
 
 }
