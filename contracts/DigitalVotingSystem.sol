@@ -37,4 +37,9 @@ contract Election{
         addCandidate(22, "Candidate B");
     }
 
+    //Function to add candidate to the candidates mapping
+    function addCandidate(uint _id, string memory _name) internal {
+        candidates[_id] = Candidate(_id, _name, 0); //Initialize a new candidate
+    }
+
 }

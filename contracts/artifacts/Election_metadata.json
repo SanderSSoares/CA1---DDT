@@ -6,6 +6,11 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -127,11 +132,11 @@
 	},
 	"sources": {
 		"contracts/DigitalVotingSystem.sol": {
-			"keccak256": "0xc001ccdc1ba979a5c3ef957adbf7b123b1f55013749b19e02614bfccd517b844",
+			"keccak256": "0x5a8f55434478b394171446bfc8d9459b24ca77da4ff837849198d7c2c19b73ec",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6d939fd453d61e39c7b2ba3f81c2ff413fd42a5dd4a8fa87cd4d096329bd0c5e",
-				"dweb:/ipfs/QmXijhva1ek1Q68K4172FLu3uz42oveZJJZitXreeU23Qz"
+				"bzz-raw://5d5c4d89728598ac699fc74570088b005be8e9f18b31a4ddc313ee540ecf3d63",
+				"dweb:/ipfs/QmWgNwTj3AxLgFPrjzhZpyKL4jeeJj9DYAm1FVKpHfBFGc"
 			]
 		}
 	},
