@@ -67,13 +67,43 @@ contract Election{
 
     //Now we want to retrieve the voting results
     //Returns an array with votes for candidate 13, candidate 22, and blank(abstained) votes
-    function getResults() public view returns (uint[3] memory){
-        uint[3] memory results;
-        results[0] = candidates[13].voteCount; //Votes for candidate 13
-        results[1] = candidates[22].voteCount; //Votes for candidate 22
-        results[2] = blankVotes; //Number of abstained votes
-        return results; //Results the results as an array
+   function getResults() public view returns (string memory) {
+    // Retrieve vote counts for each candidate
+    uint candidateAVotes = candidates[13].voteCount;
+    uint candidateBVotes = candidates[22].voteCount;
+
+    // Create a string with the results
+    string memory results = string(
+        abi.encodePacked(
+            "Candidate A: ", uintToString(candidateAVotes),
+            " votes, Candidate B: ", uintToString(candidateBVotes),
+            " votes, Blank: ", uintToString(blankVotes),
+            " votes"
+        )
+    );
+
+    return results;
+}
+
+// Helper function to convert uint to string
+function uintToString(uint v) internal pure returns (string memory) {
+    if (v == 0) {
+        return "0";
     }
+    uint digits;
+    uint temp = v;
+    while (temp != 0) {
+        digits++;
+        temp /= 10;
+    }
+    bytes memory buffer = new bytes(digits);
+    while (v != 0) {
+        digits -= 1;
+        buffer[digits] = bytes1(uint8(48 + uint(v % 10)));
+        v /= 10;
+    }
+    return string(buffer);
+}
 
     //Now to reset teh vote counts
     //This is improtant for testing and to make sure the deviec will be fully reseted for next election

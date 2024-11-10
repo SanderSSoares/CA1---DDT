@@ -76,9 +76,9 @@
 				"name": "getResults",
 				"outputs": [
 					{
-						"internalType": "uint256[3]",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256[3]"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -165,11 +165,11 @@
 	},
 	"sources": {
 		"contracts/DigitalVotingSystem.sol": {
-			"keccak256": "0x859ca6534fc3f2ea085cda5441237a8e0996bcc4fbb865600f75dda4a3d98e64",
+			"keccak256": "0x9aa44e55001a356714acda6c71ce034097a2383fec2a0a5729c0a125c90b2664",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4bcc157e32ca038b7795d9daa046a4f397a15cde371b395d3444bc7f6866fc40",
-				"dweb:/ipfs/QmXXvdUiTbMjL9kC7g4Da26W58YrvXhHjiTGSeLrbUCt1w"
+				"bzz-raw://88d1238d2a7dad962f172259b5b9e5dcaa536ea6b36c51e692793a0a4737cd2c",
+				"dweb:/ipfs/QmRLycykam7mp6GRfykAqP1dJLPSMifsUUmhat9g5icTe5"
 			]
 		}
 	},
