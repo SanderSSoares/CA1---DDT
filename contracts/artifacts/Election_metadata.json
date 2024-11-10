@@ -165,11 +165,11 @@
 	},
 	"sources": {
 		"contracts/DigitalVotingSystem.sol": {
-			"keccak256": "0x05a7e3706c3493a710271f4127ee97fbd42068a7be37d261d2855b04740020c4",
+			"keccak256": "0x859ca6534fc3f2ea085cda5441237a8e0996bcc4fbb865600f75dda4a3d98e64",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fd7ac8379abb557616e1394aa8e201a682ab815bb7b61b5abea16ce4f3345682",
-				"dweb:/ipfs/QmacdigBNnNgDjwdUZgbZhdGPcDztD88bWkuHGwSoPjapj"
+				"bzz-raw://4bcc157e32ca038b7795d9daa046a4f397a15cde371b395d3444bc7f6866fc40",
+				"dweb:/ipfs/QmXXvdUiTbMjL9kC7g4Da26W58YrvXhHjiTGSeLrbUCt1w"
 			]
 		}
 	},

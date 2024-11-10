@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.0; // Specify the version of Solidity used
+pragma solidity ^0.8.7; // Specify the version of Solidity used
 
 //This project will be based in Brazil's voting system
 //Where citizen enter the number reffered to the candidate they are voting for and confirming
-//Or they can not vote to any of the them.
+//Or they abstained (blank vote) from voting to any proposed candidate.
 
 //Creating contract
 contract Election{
@@ -85,5 +85,4 @@ contract Election{
         blankVotes=0;//REseting the abstained and total votes
         totalVotes=0;
     }
-
 }
