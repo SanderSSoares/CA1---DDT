@@ -62,7 +62,7 @@ contract Election{
         
         totalVotes++; //To increment thet total vote count
         hasVoted[msg.sender] = true; //Mark the citizen as having voted
-        emite VoteCasted(msg.sender, _candidateId); //Emitting voting evento to log the action on the blockchain
+        emit VoteCasted(msg.sender, _candidateId); //Emitting voting evento to log the action on the blockchain
     }
 
     //Now we want to retrieve the voting results
