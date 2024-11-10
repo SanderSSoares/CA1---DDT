@@ -6,6 +6,25 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "voter",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "candidateId",
+						"type": "uint256"
+					}
+				],
+				"name": "VoteCasted",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -52,6 +71,32 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalVotes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "whiteVotes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -82,11 +127,11 @@
 	},
 	"sources": {
 		"contracts/DigitalVotingSystem.sol": {
-			"keccak256": "0x6a7135dce9df641d601803448f4bb8b44299192699d2a302c653679b736df93a",
+			"keccak256": "0xc001ccdc1ba979a5c3ef957adbf7b123b1f55013749b19e02614bfccd517b844",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://75791876820ed3b6366466992b40767c55f69f999f905dfc3a081aeaf5730f38",
-				"dweb:/ipfs/QmQ4AE1RYp53GXsGMtvrba1SryqpraFf2eBTZU13fd6x1f"
+				"bzz-raw://6d939fd453d61e39c7b2ba3f81c2ff413fd42a5dd4a8fa87cd4d096329bd0c5e",
+				"dweb:/ipfs/QmXijhva1ek1Q68K4172FLu3uz42oveZJJZitXreeU23Qz"
 			]
 		}
 	},

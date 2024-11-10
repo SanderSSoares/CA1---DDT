@@ -20,4 +20,15 @@ contract Election{
 
     //Mapping to track whether an address has already voted
     mapping(address => bool) public hasVoted;
+
+    //Variable to track the total number of votes
+    uint public totalVotes;
+
+    //variable to track the number of white votes (no candidate selected)
+    uint public whiteVotes;
+
+    //Event to log voting actions
+    event VoteCasted(address voter, uint candidateId);
+
+    
 }
