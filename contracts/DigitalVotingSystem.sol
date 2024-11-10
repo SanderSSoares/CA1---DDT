@@ -24,8 +24,8 @@ contract Election{
     //Variable to track the total number of votes
     uint public totalVotes;
 
-    //variable to track the number of white votes (no candidate selected)
-    uint public whiteVotes;
+    //variable to track the number of blank votes (no candidate selected)
+    uint public blankVotes;
 
     //Event to log voting actions
     event VoteCasted(address voter, uint candidateId);
@@ -40,6 +40,17 @@ contract Election{
     //Function to add candidate to the candidates mapping
     function addCandidate(uint _id, string memory _name) internal {
         candidates[_id] = Candidate(_id, _name, 0); //Initialize a new candidate
+    }
+
+    //Function to allow citizen to vote for a candidate or cast a blank vote
+    function vote(uint _candidateId) public{
+
+        //Check first if the citizen has already voted
+        require(!hasVoted[msg.sender], "You have already voted.");
+        //Validate the candidates' ID (0 for abstaining)
+        require(
+            _candidateId ==13 || _candidateId ==22 || _candidateId ==0, "Invalid candidate ID. Press 0 if you with to Abstain."
+        );
     }
 
 }
