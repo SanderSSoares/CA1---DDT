@@ -70,7 +70,7 @@ contract Election{
     function getResults() public view returns (uint[3] memory){
         uint[3] memory results;
         results[0] = candidates[13].voteCount; //Votes for candidate 13
-        result[1] = candidates[22].voteCount; //Votes for candidate 22
+        results[1] = candidates[22].voteCount; //Votes for candidate 22
         results[2] = blankVotes; //Number of abstained votes
         return results; //Results the results as an array
     }
@@ -82,7 +82,7 @@ contract Election{
         candidates[13].voteCount=0; //Reseting votes for both candidates
         candidates[22].voteCount=0;
 
-        blankvotes=0;//REseting the abstained and total votes
+        blankVotes=0;//REseting the abstained and total votes
         totalVotes=0;
     }
 

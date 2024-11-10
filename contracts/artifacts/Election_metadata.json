@@ -72,6 +72,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "getResults",
+				"outputs": [
+					{
+						"internalType": "uint256[3]",
+						"name": "",
+						"type": "uint256[3]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -88,6 +101,13 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "resetVotes",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -145,11 +165,11 @@
 	},
 	"sources": {
 		"contracts/DigitalVotingSystem.sol": {
-			"keccak256": "0x64c091fcddab79fc59692e238c95505f694f12e775a600313937aa9a8e5732bb",
+			"keccak256": "0x05a7e3706c3493a710271f4127ee97fbd42068a7be37d261d2855b04740020c4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6762f8c8f2f93a7b91791942585fc0ecc2157c24e705b41db1c4dc69e1052c13",
-				"dweb:/ipfs/QmW8j3sYfLSbUVCuLtG65M9H5AQfjs8wC2AwuR19RS1i6r"
+				"bzz-raw://fd7ac8379abb557616e1394aa8e201a682ab815bb7b61b5abea16ce4f3345682",
+				"dweb:/ipfs/QmacdigBNnNgDjwdUZgbZhdGPcDztD88bWkuHGwSoPjapj"
 			]
 		}
 	},
