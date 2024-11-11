@@ -27,6 +27,9 @@ contract Election{
     //variable to track the number of blank votes (no candidate selected)
     uint public blankVotes;
 
+    //Address of the contract owner
+    address public owner;
+
     //Event to log voting actions
     event VoteCasted(address voter, uint candidateId);
 

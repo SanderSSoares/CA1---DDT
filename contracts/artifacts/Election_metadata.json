@@ -105,6 +105,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "resetVotes",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -165,11 +178,11 @@
 	},
 	"sources": {
 		"contracts/DigitalVotingSystem.sol": {
-			"keccak256": "0x2cf2ab4954f77090908a8f6faba7a976e72664ec41fa739afdd959440af929b8",
+			"keccak256": "0xec3aec4b1be81544f2d9d4119d136a704983b942712759f781224782df5999a9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f44b44b6ddebc22b751e95b2ff55e76c32fef1750a57fa3c3ad82a376f7fcd35",
-				"dweb:/ipfs/QmcD8bkzKfUH9kt3qxcz5DMqoPUeQ4MQYdmhmyJxzdSnEd"
+				"bzz-raw://3316efc4f936ee207858f10c0b9e8356b2f6aa969a3533acab3e9f21004fabd8",
+				"dweb:/ipfs/QmWSTqsANG8ch8XSzRFCNtdzenQJWMBrTqojkqYbjqfB3N"
 			]
 		}
 	},
