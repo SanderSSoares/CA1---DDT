@@ -116,9 +116,9 @@ function uintToString(uint v) internal pure returns (string memory) {
         totalVotes=0;
     }
 
-    function batchVote(uint[] memory candidateIds) public{
-        for (uint i=0; i<candidateIds.length;i++){
-            vote(candidateIds[i]);
-        }
-    }
+    // function batchVote(uint[] memory candidateIds) public{
+    //     for (uint i=0; i<candidateIds.length;i++){
+    //         vote(candidateIds[i]);
+    //     }
+    // }
 }
