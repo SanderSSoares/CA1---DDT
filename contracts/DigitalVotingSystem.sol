@@ -28,10 +28,18 @@ contract Election{
     uint public blankVotes;
 
     //Address of the contract owner
+    //The owner of the contract has to be the only one allowed to see the final results of the election
+    //to make it public afterwards
     address public owner;
 
     //Event to log voting actions
     event VoteCasted(address voter, uint candidateId);
+
+    //Modifier to restrict access to the owner
+    modifier onlyOwner(){
+        require(msg.sender == owner, "You are not authotized to perform this action.");
+        _;
+    }
 
     //Constructor to initialize the contract
     constructor(){

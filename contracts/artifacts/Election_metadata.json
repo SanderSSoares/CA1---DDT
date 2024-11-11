@@ -178,11 +178,11 @@
 	},
 	"sources": {
 		"contracts/DigitalVotingSystem.sol": {
-			"keccak256": "0xec3aec4b1be81544f2d9d4119d136a704983b942712759f781224782df5999a9",
+			"keccak256": "0xc12c9239c69bf7c101bff13d2763b8a42adddd0d6096c0e822667bd70fa23683",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3316efc4f936ee207858f10c0b9e8356b2f6aa969a3533acab3e9f21004fabd8",
-				"dweb:/ipfs/QmWSTqsANG8ch8XSzRFCNtdzenQJWMBrTqojkqYbjqfB3N"
+				"bzz-raw://75b66e7adb9cbc1bc75055f2976e2f24349d8f7e2425d57cb37cd58d3c7039ac",
+				"dweb:/ipfs/QmQuMgKpEk7EbBwDv5q3Gw8BTyDASbitjW6bvn6MMoLHUd"
 			]
 		}
 	},
